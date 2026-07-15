@@ -10,7 +10,7 @@ const socketHandler = require('./socket/socketHandler');
 const app = express();
 const server = http.createServer(app);
 
-const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:3000';
+const CLIENT_URL = process.env.CLIENT_URL || 'https://watch-party-web-app-mu.vercel.app';
 
 const io = new Server(server, {
   cors: {
